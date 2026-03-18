@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Engine - Bharat Digital School</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Test Header -->
+  <header class="test-header">
+    <div style="display: flex; align-items: center; gap: 16px;">
+      <a href="dashboard.html" class="btn btn-secondary btn-sm">&#8592; Exit</a>
+      <div>
+        <div class="test-title">Physics - Mechanics Test Series</div>
+        <div style="font-size: 0.8rem; color: var(--text-muted);">Question 5 of 30</div>
+      </div>
+    </div>
+    <div class="test-timer">
+      <span class="timer-icon">&#9201;</span>
+      <span>42:15</span>
+    </div>
+    <div style="display: flex; gap: 8px;">
+      <button class="btn btn-secondary btn-sm">&#128278; Flag</button>
+      <button class="btn btn-danger btn-sm">Submit Test</button>
+    </div>
+  </header>
+
+  <!-- Test Body -->
+  <div class="test-body">
+    <!-- Main Question Area -->
+    <div class="test-main">
+
+      <!-- MCQ Question -->
+      <div class="question-section">
+        <div class="question-number">
+          <div class="q-num">5</div>
+          <span class="badge badge-primary">MCQ</span>
+          <span class="q-type">Single Choice</span>
+          <span class="q-marks">+4 / -1 marks</span>
+        </div>
+
+        <div class="question-text">
+          A body of mass 5 kg is thrown vertically upward with an initial velocity of 20 m/s. What is the maximum height reached by the body? (Take g = 10 m/s&sup2;)
+        </div>
+
+        <div class="question-image">
+          &#128444;&#65039; [Diagram: Projectile motion illustration]
+        </div>
+
+        <div class="mcq-options">
+          <div class="mcq-option">
+            <div class="option-letter">A</div>
+            <div class="option-text">10 meters</div>
+          </div>
+          <div class="mcq-option selected">
+            <div class="option-letter">B</div>
+            <div class="option-text">20 meters</div>
+          </div>
+          <div class="mcq-option">
+            <div class="option-letter">C</div>
+            <div class="option-text">30 meters</div>
+          </div>
+          <div class="mcq-option">
+            <div class="option-letter">D</div>
+            <div class="option-text">40 meters</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Subjective Question -->
+      <div class="question-section" style="margin-top: 60px; padding-top: 40px; border-top: 1px solid var(--border);">
+        <div class="question-number">
+          <div class="q-num">6</div>
+          <span class="badge badge-warning">Subjective</span>
+          <span class="q-type">Long Answer</span>
+          <span class="q-marks">10 marks</span>
+        </div>
+
+        <div class="question-text">
+          Explain Newton's three laws of motion with real-world examples for each law. Also discuss how these laws are interconnected.
+        </div>
+
+        <div class="subjective-answer">
+          <textarea class="form-control" placeholder="Type your answer here...">Newton's First Law (Law of Inertia): An object at rest stays at rest, and an object in motion stays in motion with the same speed and direction, unless acted upon by an external force.
+
+Example: A book lying on a table remains at rest until someone picks it up...</textarea>
+          <div class="word-count">Word count: 42 / 500</div>
+        </div>
+      </div>
+
+      <!-- Navigation Buttons -->
+      <div class="test-nav-actions">
+        <button class="btn btn-secondary">&#8592; Previous</button>
+        <div style="display: flex; gap: 8px;">
+          <button class="btn btn-secondary">Clear Response</button>
+          <button class="btn btn-primary">Next &#8594;</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Question Navigation Sidebar -->
+    <aside class="test-sidebar">
+      <div class="question-nav-title">Question Navigation</div>
+
+      <div class="question-nav-grid">
+        <button class="q-nav-btn answered">1</button>
+        <button class="q-nav-btn answered">2</button>
+        <button class="q-nav-btn answered">3</button>
+        <button class="q-nav-btn flagged">4</button>
+        <button class="q-nav-btn current">5</button>
+        <button class="q-nav-btn">6</button>
+        <button class="q-nav-btn">7</button>
+        <button class="q-nav-btn">8</button>
+        <button class="q-nav-btn">9</button>
+        <button class="q-nav-btn">10</button>
+        <button class="q-nav-btn">11</button>
+        <button class="q-nav-btn">12</button>
+        <button class="q-nav-btn">13</button>
+        <button class="q-nav-btn">14</button>
+        <button class="q-nav-btn">15</button>
+        <button class="q-nav-btn">16</button>
+        <button class="q-nav-btn">17</button>
+        <button class="q-nav-btn">18</button>
+        <button class="q-nav-btn">19</button>
+        <button class="q-nav-btn">20</button>
+        <button class="q-nav-btn">21</button>
+        <button class="q-nav-btn">22</button>
+        <button class="q-nav-btn">23</button>
+        <button class="q-nav-btn">24</button>
+        <button class="q-nav-btn">25</button>
+        <button class="q-nav-btn">26</button>
+        <button class="q-nav-btn">27</button>
+        <button class="q-nav-btn">28</button>
+        <button class="q-nav-btn">29</button>
+        <button class="q-nav-btn">30</button>
+      </div>
+
+      <div class="nav-legend">
+        <div class="legend-item">
+          <div class="legend-dot current"></div>
+          <span>Current</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-dot answered"></div>
+          <span>Answered</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-dot flagged"></div>
+          <span>Flagged for Review</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-dot unanswered"></div>
+          <span>Unanswered</span>
+        </div>
+      </div>
+
+      <div style="background: var(--bg-dark); border-radius: var(--radius-sm); padding: 16px; margin-bottom: 16px;">
+        <div style="display: flex; justify-content: space-between; font-size: 0.85rem; margin-bottom: 8px;">
+          <span style="color: var(--text-muted);">Answered</span>
+          <span style="color: var(--success); font-weight: 600;">3/30</span>
+        </div>
+        <div style="display: flex; justify-content: space-between; font-size: 0.85rem; margin-bottom: 8px;">
+          <span style="color: var(--text-muted);">Flagged</span>
+          <span style="color: var(--accent); font-weight: 600;">1</span>
+        </div>
+        <div style="display: flex; justify-content: space-between; font-size: 0.85rem;">
+          <span style="color: var(--text-muted);">Remaining</span>
+          <span style="color: var(--text-primary); font-weight: 600;">26</span>
+        </div>
+      </div>
+
+      <div class="autosave-notice">
+        &#10003; Auto-saved at 10:42 AM
+      </div>
+
+      <button class="btn btn-danger btn-block" style="margin-top: 16px;">Submit Test</button>
+    </aside>
+  </div>
+
+</body>
+</html>

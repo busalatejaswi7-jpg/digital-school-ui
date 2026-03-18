@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel - Bharat Digital School</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="dashboard-layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <div class="logo-icon">B</div>
+        <span>BDS Admin</span>
+      </div>
+
+      <div class="sidebar-section-title">Management</div>
+      <nav class="sidebar-nav">
+        <a href="admin.html" class="active">
+          <span class="nav-icon">&#128202;</span>
+          Dashboard
+        </a>
+        <a href="admin.html">
+          <span class="nav-icon">&#128221;</span>
+          Test Series
+        </a>
+        <a href="admin.html">
+          <span class="nav-icon">&#10067;</span>
+          Questions
+        </a>
+        <a href="admin.html">
+          <span class="nav-icon">&#128218;</span>
+          Subjects & Topics
+        </a>
+      </nav>
+
+      <div class="sidebar-section-title">Analytics</div>
+      <nav class="sidebar-nav">
+        <a href="admin.html">
+          <span class="nav-icon">&#128200;</span>
+          Test Analytics
+        </a>
+        <a href="admin.html">
+          <span class="nav-icon">&#128101;</span>
+          Student Performance
+        </a>
+        <a href="admin.html">
+          <span class="nav-icon">&#128203;</span>
+          Reports
+        </a>
+      </nav>
+
+      <div class="sidebar-section-title">System</div>
+      <nav class="sidebar-nav">
+        <a href="admin.html">
+          <span class="nav-icon">&#9881;&#65039;</span>
+          Settings
+        </a>
+        <a href="login.html">
+          <span class="nav-icon">&#128682;</span>
+          Logout
+        </a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Header -->
+      <div class="dashboard-header">
+        <div>
+          <h1>Admin Dashboard</h1>
+          <div class="header-subtitle">Manage tests, questions, and monitor platform analytics</div>
+        </div>
+        <div class="navbar-actions">
+          <div class="avatar" style="background: linear-gradient(135deg, var(--danger), var(--accent));">A</div>
+        </div>
+      </div>
+
+      <!-- Admin Stats -->
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-header">
+            <div class="stat-icon purple">&#128221;</div>
+          </div>
+          <div class="stat-value">48</div>
+          <div class="stat-label">Total Test Series</div>
+          <div class="stat-change positive">+6 this month</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-header">
+            <div class="stat-icon blue">&#10067;</div>
+          </div>
+          <div class="stat-value">2,450</div>
+          <div class="stat-label">Total Questions</div>
+          <div class="stat-change positive">+180 this month</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-header">
+            <div class="stat-icon green">&#128101;</div>
+          </div>
+          <div class="stat-value">1,280</div>
+          <div class="stat-label">Active Students</div>
+          <div class="stat-change positive">+45 this week</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-header">
+            <div class="stat-icon amber">&#127942;</div>
+          </div>
+          <div class="stat-value">73%</div>
+          <div class="stat-label">Avg. Pass Rate</div>
+          <div class="stat-change negative">-2% from last month</div>
+        </div>
+      </div>
+
+      <!-- Tabs -->
+      <div class="tabs">
+        <button class="tab active">Test Series</button>
+        <button class="tab">Questions</button>
+        <button class="tab">Subjects & Topics</button>
+        <button class="tab">Bulk Upload</button>
+      </div>
+
+      <!-- Test Series Management -->
+      <div class="admin-content-header">
+        <h2>Test Series Management</h2>
+        <button class="btn btn-primary btn-sm">+ Create Test Series</button>
+      </div>
+
+      <!-- Filters -->
+      <div class="filter-bar">
+        <div class="search-input">
+          <span class="search-icon">&#128269;</span>
+          <input type="text" class="form-control" placeholder="Search test series..." style="padding-left: 40px;">
+        </div>
+        <select class="form-control">
+          <option>All Subjects</option>
+          <option>Physics</option>
+          <option>Chemistry</option>
+          <option>Mathematics</option>
+          <option>Biology</option>
+        </select>
+        <select class="form-control">
+          <option>All Status</option>
+          <option>Published</option>
+          <option>Draft</option>
+          <option>Archived</option>
+        </select>
+      </div>
+
+      <!-- Data Table -->
+      <div class="data-table-wrapper">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Test Series Name</th>
+              <th>Subject</th>
+              <th>Questions</th>
+              <th>Duration</th>
+              <th>Difficulty</th>
+              <th>Status</th>
+              <th>Attempts</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="font-weight: 600;">Physics - Mechanics</td>
+              <td>Physics</td>
+              <td>30</td>
+              <td>60 min</td>
+              <td><span class="badge badge-warning">Medium</span></td>
+              <td><span class="badge badge-success">Published</span></td>
+              <td>342</td>
+              <td>
+                <div class="table-actions">
+                  <button title="Edit">&#9998;</button>
+                  <button title="View">&#128065;</button>
+                  <button class="delete" title="Delete">&#128465;</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td style="font-weight: 600;">Chemistry - Organic Reactions</td>
+              <td>Chemistry</td>
+              <td>25</td>
+              <td>45 min</td>
+              <td><span class="badge badge-danger">Hard</span></td>
+              <td><span class="badge badge-success">Published</span></td>
+              <td>215</td>
+              <td>
+                <div class="table-actions">
+                  <button title="Edit">&#9998;</button>
+                  <button title="View">&#128065;</button>
+                  <button class="delete" title="Delete">&#128465;</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td style="font-weight: 600;">Mathematics - Calculus Basics</td>
+              <td>Mathematics</td>
+              <td>40</td>
+              <td>90 min</td>
+              <td><span class="badge badge-warning">Medium</span></td>
+              <td><span class="badge badge-primary">Draft</span></td>
+              <td>0</td>
+              <td>
+                <div class="table-actions">
+                  <button title="Edit">&#9998;</button>
+                  <button title="View">&#128065;</button>
+                  <button class="delete" title="Delete">&#128465;</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td style="font-weight: 600;">Biology - Cell Biology</td>
+              <td>Biology</td>
+              <td>20</td>
+              <td>30 min</td>
+              <td><span class="badge badge-success">Easy</span></td>
+              <td><span class="badge badge-success">Published</span></td>
+              <td>487</td>
+              <td>
+                <div class="table-actions">
+                  <button title="Edit">&#9998;</button>
+                  <button title="View">&#128065;</button>
+                  <button class="delete" title="Delete">&#128465;</button>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td style="font-weight: 600;">English - Grammar Essentials</td>
+              <td>English</td>
+              <td>35</td>
+              <td>50 min</td>
+              <td><span class="badge badge-success">Easy</span></td>
+              <td><span class="badge badge-warning">Draft</span></td>
+              <td>0</td>
+              <td>
+                <div class="table-actions">
+                  <button title="Edit">&#9998;</button>
+                  <button title="View">&#128065;</button>
+                  <button class="delete" title="Delete">&#128465;</button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="pagination">
+          <div class="page-info">Showing 1-5 of 48 test series</div>
+          <div class="page-buttons">
+            <button class="page-btn">&#8592;</button>
+            <button class="page-btn active">1</button>
+            <button class="page-btn">2</button>
+            <button class="page-btn">3</button>
+            <button class="page-btn">...</button>
+            <button class="page-btn">10</button>
+            <button class="page-btn">&#8594;</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bulk Upload Section -->
+      <div class="admin-content-header" style="margin-top: 40px;">
+        <h2>Bulk Question Upload</h2>
+      </div>
+
+      <div class="upload-area">
+        <div class="upload-icon">&#128228;</div>
+        <h4>Drag and drop your file here</h4>
+        <p>Supports CSV and Excel files. Max 500 questions per upload.</p>
+        <button class="btn btn-primary btn-sm" style="margin-top: 16px;">Browse Files</button>
+      </div>
+
+      <!-- Admin Analytics Section -->
+      <div class="admin-content-header" style="margin-top: 40px;">
+        <h2>Test Analytics Overview</h2>
+        <select class="form-control" style="width: auto; padding: 8px 32px 8px 12px; font-size: 0.85rem;">
+          <option>Last 30 Days</option>
+          <option>Last 7 Days</option>
+          <option>Last 3 Months</option>
+        </select>
+      </div>
+
+      <div class="grid-2" style="margin-bottom: 32px;">
+        <div class="chart-container">
+          <div class="chart-header">
+            <h3>Difficulty Distribution</h3>
+          </div>
+          <div style="display: flex; gap: 24px; align-items: center; justify-content: center; padding: 40px 0;">
+            <div style="text-align: center;">
+              <div style="width: 80px; height: 80px; border-radius: 50%; background: conic-gradient(var(--success) 0% 30%, var(--accent) 30% 65%, var(--danger) 65% 100%); margin: 0 auto 12px;"></div>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 12px;">
+              <div style="display: flex; align-items: center; gap: 8px; font-size: 0.85rem;">
+                <div style="width: 12px; height: 12px; border-radius: 3px; background: var(--success);"></div>
+                <span style="color: var(--text-secondary);">Easy: 30%</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 8px; font-size: 0.85rem;">
+                <div style="width: 12px; height: 12px; border-radius: 3px; background: var(--accent);"></div>
+                <span style="color: var(--text-secondary);">Medium: 35%</span>
+              </div>
+              <div style="display: flex; align-items: center; gap: 8px; font-size: 0.85rem;">
+                <div style="width: 12px; height: 12px; border-radius: 3px; background: var(--danger);"></div>
+                <span style="color: var(--text-secondary);">Hard: 35%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="chart-container">
+          <div class="chart-header">
+            <h3>Student Participation</h3>
+          </div>
+          <div class="chart-placeholder">
+            <div class="chart-bar" style="height: 40%; background: linear-gradient(180deg, var(--secondary), #0284c7);"><span class="chart-bar-label">Mon</span></div>
+            <div class="chart-bar" style="height: 65%; background: linear-gradient(180deg, var(--secondary), #0284c7);"><span class="chart-bar-label">Tue</span></div>
+            <div class="chart-bar" style="height: 55%; background: linear-gradient(180deg, var(--secondary), #0284c7);"><span class="chart-bar-label">Wed</span></div>
+            <div class="chart-bar" style="height: 80%; background: linear-gradient(180deg, var(--secondary), #0284c7);"><span class="chart-bar-label">Thu</span></div>
+            <div class="chart-bar" style="height: 70%; background: linear-gradient(180deg, var(--secondary), #0284c7);"><span class="chart-bar-label">Fri</span></div>
+            <div class="chart-bar" style="height: 90%; background: linear-gradient(180deg, var(--secondary), #0284c7);"><span class="chart-bar-label">Sat</span></div>
+            <div class="chart-bar" style="height: 45%; background: linear-gradient(180deg, var(--secondary), #0284c7);"><span class="chart-bar-label">Sun</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Create Test Series Modal (shown as static example) -->
+      <div class="admin-content-header" style="margin-top: 40px;">
+        <h2>Create New Test Series</h2>
+      </div>
+
+      <div class="card" style="max-width: 700px;">
+        <form>
+          <div class="form-group">
+            <label>Test Series Title</label>
+            <input type="text" class="form-control" placeholder="e.g., Physics - Wave Optics">
+          </div>
+          <div class="grid-2">
+            <div class="form-group">
+              <label>Subject</label>
+              <select class="form-control">
+                <option>Select Subject</option>
+                <option>Physics</option>
+                <option>Chemistry</option>
+                <option>Mathematics</option>
+                <option>Biology</option>
+                <option>English</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Topic</label>
+              <select class="form-control">
+                <option>Select Topic</option>
+                <option>Mechanics</option>
+                <option>Thermodynamics</option>
+                <option>Optics</option>
+                <option>Electromagnetism</option>
+              </select>
+            </div>
+          </div>
+          <div class="grid-2">
+            <div class="form-group">
+              <label>Duration (minutes)</label>
+              <input type="number" class="form-control" placeholder="e.g., 60">
+            </div>
+            <div class="form-group">
+              <label>Difficulty Level</label>
+              <select class="form-control">
+                <option>Select Difficulty</option>
+                <option>Easy</option>
+                <option>Medium</option>
+                <option>Hard</option>
+              </select>
+            </div>
+          </div>
+          <div class="grid-2">
+            <div class="form-group">
+              <label>Total Questions</label>
+              <input type="number" class="form-control" placeholder="e.g., 30">
+            </div>
+            <div class="form-group">
+              <label>Marks per Question</label>
+              <input type="number" class="form-control" placeholder="e.g., 4">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Description</label>
+            <textarea class="form-control" placeholder="Brief description of the test series..."></textarea>
+          </div>
+          <div style="display: flex; gap: 12px; justify-content: flex-end; margin-top: 8px;">
+            <button type="button" class="btn btn-secondary">Save as Draft</button>
+            <button type="button" class="btn btn-primary">Publish Test Series</button>
+          </div>
+        </form>
+      </div>
+
+    </main>
+  </div>
+
+</body>
+</html>

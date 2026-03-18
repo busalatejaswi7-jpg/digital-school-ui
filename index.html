@@ -1,12 +1,181 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Bharat Digital School</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bharat Digital School - Learn, Test, Excel</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<h1>Bharat Digital School</h1>
+  <!-- Navbar -->
+  <div class="container">
+    <nav class="navbar">
+      <a href="index.html" class="navbar-brand">
+        <div class="logo-icon">B</div>
+        <span>BharatDigital<span class="text-gradient">School</span></span>
+      </a>
+      <div class="navbar-nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="#features">Features</a>
+        <a href="#modules">Modules</a>
+        <a href="#about">About</a>
+      </div>
+      <div class="navbar-actions">
+        <a href="login.html" class="btn btn-secondary btn-sm">Login</a>
+        <a href="login.html" class="btn btn-primary btn-sm">Get Started</a>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Hero Section -->
+  <div class="container">
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Empowering Students with <span class="text-gradient">Digital Learning</span></h1>
+        <p>A comprehensive platform for students to learn, practice, and excel through structured test series, real-time analytics, and personalized performance tracking.</p>
+        <div class="hero-actions">
+          <a href="login.html" class="btn btn-primary btn-lg">Start Learning</a>
+          <a href="#features" class="btn btn-secondary btn-lg">Explore Features</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <div class="stat-number">10K+</div>
+            <div class="stat-label">Active Students</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">500+</div>
+            <div class="stat-label">Test Series</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">50K+</div>
+            <div class="stat-label">Questions</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-illustration">
+          <div class="illustration-icon">&#127891;</div>
+          <div class="illustration-text">Learn. Test. Excel.</div>
+          <div class="floating-card">&#9989; MCQ Tests</div>
+          <div class="floating-card">&#128200; Analytics</div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Features Section -->
+  <div class="container" id="features">
+    <section class="section">
+      <div class="section-header">
+        <h2>Why Choose <span class="text-gradient">BharatDigitalSchool</span>?</h2>
+        <p>Everything you need to prepare effectively, track your progress, and achieve your academic goals.</p>
+      </div>
+      <div class="grid-4">
+        <div class="card feature-card">
+          <div class="feature-icon icon-purple">&#128218;</div>
+          <h3>Structured Test Series</h3>
+          <p>Access curated test series organized by subject, topic, and difficulty level for systematic preparation.</p>
+        </div>
+        <div class="card feature-card">
+          <div class="feature-icon icon-blue">&#9201;</div>
+          <h3>Timed Assessments</h3>
+          <p>Practice with real exam conditions featuring timed tests, auto-save, and question navigation.</p>
+        </div>
+        <div class="card feature-card">
+          <div class="feature-icon icon-green">&#128200;</div>
+          <h3>Performance Analytics</h3>
+          <p>Track your scores, accuracy, and improvement trends with detailed performance dashboards.</p>
+        </div>
+        <div class="card feature-card">
+          <div class="feature-icon icon-amber">&#128274;</div>
+          <h3>Secure & Reliable</h3>
+          <p>Phone-based OTP authentication ensures secure access to your personalized learning dashboard.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Modules Section -->
+  <div class="container" id="modules">
+    <section class="section">
+      <div class="section-header">
+        <h2>Platform <span class="text-gradient">Modules</span></h2>
+        <p>A complete ecosystem built for students and educators.</p>
+      </div>
+      <div class="grid-3">
+        <div class="card" style="padding: 32px;">
+          <div style="font-size: 2rem; margin-bottom: 16px;">&#128241;</div>
+          <h3 style="margin-bottom: 8px;">Phone OTP Login</h3>
+          <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.7;">Secure phone-based authentication with OTP verification, expiry management, and retry support.</p>
+        </div>
+        <div class="card" style="padding: 32px;">
+          <div style="font-size: 2rem; margin-bottom: 16px;">&#128202;</div>
+          <h3 style="margin-bottom: 8px;">Student Dashboard</h3>
+          <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.7;">View test series, track performance, resume incomplete tests, and filter by subject or status.</p>
+        </div>
+        <div class="card" style="padding: 32px;">
+          <div style="font-size: 2rem; margin-bottom: 16px;">&#9999;&#65039;</div>
+          <h3 style="margin-bottom: 8px;">Test Engine</h3>
+          <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.7;">Supports MCQ and subjective questions with timer, navigation panel, and auto-save functionality.</p>
+        </div>
+        <div class="card" style="padding: 32px;">
+          <div style="font-size: 2rem; margin-bottom: 16px;">&#128444;&#65039;</div>
+          <h3 style="margin-bottom: 8px;">Rich Question System</h3>
+          <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.7;">Questions with text and images, multiple option types, subject/difficulty tagging for smart filtering.</p>
+        </div>
+        <div class="card" style="padding: 32px;">
+          <div style="font-size: 2rem; margin-bottom: 16px;">&#9881;&#65039;</div>
+          <h3 style="margin-bottom: 8px;">Admin Panel</h3>
+          <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.7;">Create test series, manage questions via bulk upload or manual entry, organize subjects and topics.</p>
+        </div>
+        <div class="card" style="padding: 32px;">
+          <div style="font-size: 2rem; margin-bottom: 16px;">&#128201;</div>
+          <h3 style="margin-bottom: 8px;">Analytics Dashboard</h3>
+          <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.7;">Student scores and accuracy tracking. Admin insights on test difficulty and participation metrics.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- About Section -->
+  <div class="container" id="about">
+    <section class="section">
+      <div class="section-header">
+        <h2>Built for <span class="text-gradient">India's Students</span></h2>
+        <p>BharatDigitalSchool bridges the gap between traditional education and digital learning, making quality test preparation accessible to every student.</p>
+      </div>
+      <div class="grid-2">
+        <div class="card" style="padding: 32px;">
+          <h3 style="margin-bottom: 12px; font-size: 1.2rem;">For Students</h3>
+          <ul style="color: var(--text-secondary); font-size: 0.9rem; line-height: 2.2;">
+            <li>&#10003; Access test series anytime, anywhere</li>
+            <li>&#10003; Practice with MCQ and subjective questions</li>
+            <li>&#10003; Track performance with detailed analytics</li>
+            <li>&#10003; Resume tests from where you left off</li>
+            <li>&#10003; Filter tests by subject and difficulty</li>
+          </ul>
+        </div>
+        <div class="card" style="padding: 32px;">
+          <h3 style="margin-bottom: 12px; font-size: 1.2rem;">For Administrators</h3>
+          <ul style="color: var(--text-secondary); font-size: 0.9rem; line-height: 2.2;">
+            <li>&#10003; Create and manage test series efficiently</li>
+            <li>&#10003; Bulk upload questions via CSV/Excel</li>
+            <li>&#10003; Tag questions by subject and difficulty</li>
+            <li>&#10003; View student performance analytics</li>
+            <li>&#10003; Analyze test difficulty and participation</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 BharatDigitalSchool. All rights reserved. Built with &#10084;&#65039; for India's students.</p>
+    </div>
+  </footer>
 
 </body>
 </html>
