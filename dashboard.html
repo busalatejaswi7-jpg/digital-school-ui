@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Dashboard - Bharat Digital School</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="dashboard-layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <div class="logo-icon">B</div>
+        <span>BDS</span>
+      </div>
+
+      <div class="sidebar-section-title">Main</div>
+      <nav class="sidebar-nav">
+        <a href="dashboard.html" class="active">
+          <span class="nav-icon">&#127968;</span>
+          Dashboard
+        </a>
+        <a href="dashboard.html">
+          <span class="nav-icon">&#128221;</span>
+          My Tests
+        </a>
+        <a href="results.html">
+          <span class="nav-icon">&#128200;</span>
+          Results
+        </a>
+        <a href="dashboard.html">
+          <span class="nav-icon">&#128214;</span>
+          Study Material
+        </a>
+      </nav>
+
+      <div class="sidebar-section-title">Account</div>
+      <nav class="sidebar-nav">
+        <a href="dashboard.html">
+          <span class="nav-icon">&#128100;</span>
+          Profile
+        </a>
+        <a href="dashboard.html">
+          <span class="nav-icon">&#9881;&#65039;</span>
+          Settings
+        </a>
+        <a href="login.html">
+          <span class="nav-icon">&#128682;</span>
+          Logout
+        </a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Header -->
+      <div class="dashboard-header">
+        <div>
+          <h1>Welcome back, Tejaswi &#128075;</h1>
+          <div class="header-subtitle">Here's an overview of your learning progress</div>
+        </div>
+        <div class="navbar-actions">
+          <a href="test-engine.html" class="btn btn-primary btn-sm">Start New Test</a>
+          <div class="avatar">T</div>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-header">
+            <div class="stat-icon purple">&#128221;</div>
+          </div>
+          <div class="stat-value">24</div>
+          <div class="stat-label">Tests Taken</div>
+          <div class="stat-change positive">+3 this week</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-header">
+            <div class="stat-icon green">&#127942;</div>
+          </div>
+          <div class="stat-value">78%</div>
+          <div class="stat-label">Average Score</div>
+          <div class="stat-change positive">+5% improvement</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-header">
+            <div class="stat-icon blue">&#127919;</div>
+          </div>
+          <div class="stat-value">82%</div>
+          <div class="stat-label">Accuracy Rate</div>
+          <div class="stat-change positive">+2.3% this month</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-header">
+            <div class="stat-icon amber">&#9203;</div>
+          </div>
+          <div class="stat-value">4h 32m</div>
+          <div class="stat-label">Time Spent</div>
+          <div class="stat-change positive">Active learner</div>
+        </div>
+      </div>
+
+      <!-- Performance Chart -->
+      <div class="chart-container">
+        <div class="chart-header">
+          <h3>Performance Trend</h3>
+          <div style="display: flex; gap: 8px;">
+            <button class="btn btn-sm btn-secondary">Week</button>
+            <button class="btn btn-sm btn-primary">Month</button>
+            <button class="btn btn-sm btn-secondary">Year</button>
+          </div>
+        </div>
+        <div class="chart-placeholder">
+          <div class="chart-bar" style="height: 45%;"><span class="chart-bar-label">Physics</span></div>
+          <div class="chart-bar" style="height: 72%;"><span class="chart-bar-label">Chemistry</span></div>
+          <div class="chart-bar" style="height: 60%;"><span class="chart-bar-label">Maths</span></div>
+          <div class="chart-bar" style="height: 88%;"><span class="chart-bar-label">Biology</span></div>
+          <div class="chart-bar" style="height: 55%;"><span class="chart-bar-label">English</span></div>
+          <div class="chart-bar" style="height: 78%;"><span class="chart-bar-label">History</span></div>
+          <div class="chart-bar" style="height: 65%;"><span class="chart-bar-label">Geography</span></div>
+          <div class="chart-bar" style="height: 82%;"><span class="chart-bar-label">Civics</span></div>
+        </div>
+      </div>
+
+      <!-- Test Series -->
+      <div class="admin-content-header" style="margin-top: 16px;">
+        <h2>Available Test Series</h2>
+        <div style="display: flex; gap: 8px;">
+          <select class="form-control" style="width: auto; padding: 8px 32px 8px 12px; font-size: 0.85rem;">
+            <option>All Subjects</option>
+            <option>Physics</option>
+            <option>Chemistry</option>
+            <option>Mathematics</option>
+            <option>Biology</option>
+          </select>
+          <select class="form-control" style="width: auto; padding: 8px 32px 8px 12px; font-size: 0.85rem;">
+            <option>All Status</option>
+            <option>Not Started</option>
+            <option>In Progress</option>
+            <option>Completed</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="test-series-grid">
+        <!-- Test Card 1 -->
+        <div class="test-card">
+          <div class="test-card-header">
+            <h3>Physics - Mechanics Test Series</h3>
+            <span class="badge badge-warning">In Progress</span>
+          </div>
+          <div class="test-meta">
+            <span>&#128196; 30 Questions</span>
+            <span>&#9201; 60 Minutes</span>
+            <span>&#11088; Medium</span>
+          </div>
+          <div class="test-progress">
+            <div style="display: flex; justify-content: space-between; font-size: 0.85rem;">
+              <span style="color: var(--text-secondary);">Progress</span>
+              <span style="color: var(--primary-light); font-weight: 600;">18/30</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 60%;"></div>
+            </div>
+          </div>
+          <div class="test-actions">
+            <a href="test-engine.html" class="btn btn-primary btn-sm">Resume Test</a>
+            <button class="btn btn-secondary btn-sm">View Details</button>
+          </div>
+        </div>
+
+        <!-- Test Card 2 -->
+        <div class="test-card">
+          <div class="test-card-header">
+            <h3>Chemistry - Organic Reactions</h3>
+            <span class="badge badge-success">Completed</span>
+          </div>
+          <div class="test-meta">
+            <span>&#128196; 25 Questions</span>
+            <span>&#9201; 45 Minutes</span>
+            <span>&#11088; Hard</span>
+          </div>
+          <div class="test-progress">
+            <div style="display: flex; justify-content: space-between; font-size: 0.85rem;">
+              <span style="color: var(--text-secondary);">Score</span>
+              <span style="color: var(--success); font-weight: 600;">82/100</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 82%;"></div>
+            </div>
+          </div>
+          <div class="test-actions">
+            <a href="results.html" class="btn btn-success btn-sm">View Results</a>
+            <button class="btn btn-secondary btn-sm">Retake Test</button>
+          </div>
+        </div>
+
+        <!-- Test Card 3 -->
+        <div class="test-card">
+          <div class="test-card-header">
+            <h3>Mathematics - Calculus Basics</h3>
+            <span class="badge badge-primary">Not Started</span>
+          </div>
+          <div class="test-meta">
+            <span>&#128196; 40 Questions</span>
+            <span>&#9201; 90 Minutes</span>
+            <span>&#11088; Medium</span>
+          </div>
+          <div class="test-progress">
+            <div style="display: flex; justify-content: space-between; font-size: 0.85rem;">
+              <span style="color: var(--text-secondary);">Progress</span>
+              <span style="color: var(--text-muted); font-weight: 600;">0/40</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 0%;"></div>
+            </div>
+          </div>
+          <div class="test-actions">
+            <a href="test-engine.html" class="btn btn-primary btn-sm">Start Test</a>
+            <button class="btn btn-secondary btn-sm">View Details</button>
+          </div>
+        </div>
+
+        <!-- Test Card 4 -->
+        <div class="test-card">
+          <div class="test-card-header">
+            <h3>Biology - Cell Biology</h3>
+            <span class="badge badge-danger">Expired</span>
+          </div>
+          <div class="test-meta">
+            <span>&#128196; 20 Questions</span>
+            <span>&#9201; 30 Minutes</span>
+            <span>&#11088; Easy</span>
+          </div>
+          <div class="test-progress">
+            <div style="display: flex; justify-content: space-between; font-size: 0.85rem;">
+              <span style="color: var(--text-secondary);">Score</span>
+              <span style="color: var(--success); font-weight: 600;">95/100</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 95%;"></div>
+            </div>
+          </div>
+          <div class="test-actions">
+            <a href="results.html" class="btn btn-success btn-sm">View Results</a>
+            <button class="btn btn-secondary btn-sm">Review Answers</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+</body>
+</html>

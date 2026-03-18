@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Bharat Digital School</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="auth-page">
+    <!-- Left Panel -->
+    <div class="auth-left">
+      <div class="auth-illustration">&#127891;</div>
+      <h2>Welcome to <span class="text-gradient">BharatDigitalSchool</span></h2>
+      <p>Login with your phone number to access test series, track performance, and accelerate your preparation journey.</p>
+    </div>
+
+    <!-- Right Panel - Login Form -->
+    <div class="auth-right">
+      <div class="auth-form-wrapper">
+        <a href="index.html" class="navbar-brand" style="margin-bottom: 40px; display: inline-flex;">
+          <div class="logo-icon">B</div>
+          <span>BharatDigital<span class="text-gradient">School</span></span>
+        </a>
+
+        <!-- Step 1: Phone Number -->
+        <div id="step-phone">
+          <h2>Login to your account</h2>
+          <p class="auth-subtitle">Enter your phone number to receive a one-time password</p>
+
+          <form>
+            <div class="form-group">
+              <label>Phone Number</label>
+              <div class="phone-input-group">
+                <input type="text" class="country-code" value="+91" readonly>
+                <input type="tel" class="form-control" placeholder="Enter 10-digit phone number" maxlength="10">
+              </div>
+            </div>
+
+            <a href="#otp-step" class="btn btn-primary btn-block" onclick="document.getElementById('step-phone').style.display='none'; document.getElementById('step-otp').style.display='block'; return false;">
+              Send OTP
+            </a>
+          </form>
+
+          <div style="text-align: center; margin-top: 24px;">
+            <span style="color: var(--text-muted); font-size: 0.9rem;">Don't have an account? </span>
+            <a href="login.html" style="color: var(--primary-light); font-weight: 600;">Sign Up</a>
+          </div>
+        </div>
+
+        <!-- Step 2: OTP Verification -->
+        <div id="step-otp" style="display: none;">
+          <h2>Verify OTP</h2>
+          <p class="auth-subtitle">We've sent a 6-digit OTP to +91 98765XXXXX</p>
+
+          <div class="otp-inputs">
+            <input type="text" maxlength="1" value="4">
+            <input type="text" maxlength="1" value="8">
+            <input type="text" maxlength="1" value="2">
+            <input type="text" maxlength="1" value="7">
+            <input type="text" maxlength="1">
+            <input type="text" maxlength="1">
+          </div>
+
+          <div class="timer">OTP expires in 02:30</div>
+
+          <a href="dashboard.html" class="btn btn-primary btn-block" style="margin-top: 20px;">
+            Verify & Login
+          </a>
+
+          <div class="otp-footer">
+            <span>Didn't receive the OTP?</span>
+            <a href="#">Resend OTP</a>
+          </div>
+
+          <div style="text-align: center; margin-top: 16px;">
+            <a href="#" onclick="document.getElementById('step-otp').style.display='none'; document.getElementById('step-phone').style.display='block'; return false;" style="color: var(--text-muted); font-size: 0.9rem;">
+              &#8592; Change phone number
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

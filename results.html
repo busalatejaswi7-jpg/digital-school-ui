@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Results - Bharat Digital School</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="dashboard-layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <div class="logo-icon">B</div>
+        <span>BDS</span>
+      </div>
+
+      <div class="sidebar-section-title">Main</div>
+      <nav class="sidebar-nav">
+        <a href="dashboard.html">
+          <span class="nav-icon">&#127968;</span>
+          Dashboard
+        </a>
+        <a href="dashboard.html">
+          <span class="nav-icon">&#128221;</span>
+          My Tests
+        </a>
+        <a href="results.html" class="active">
+          <span class="nav-icon">&#128200;</span>
+          Results
+        </a>
+        <a href="dashboard.html">
+          <span class="nav-icon">&#128214;</span>
+          Study Material
+        </a>
+      </nav>
+
+      <div class="sidebar-section-title">Account</div>
+      <nav class="sidebar-nav">
+        <a href="dashboard.html">
+          <span class="nav-icon">&#128100;</span>
+          Profile
+        </a>
+        <a href="dashboard.html">
+          <span class="nav-icon">&#9881;&#65039;</span>
+          Settings
+        </a>
+        <a href="login.html">
+          <span class="nav-icon">&#128682;</span>
+          Logout
+        </a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Results Header -->
+      <div class="results-header">
+        <div class="score-circle">
+          <div class="score-value">82</div>
+          <div class="score-total">out of 100</div>
+        </div>
+        <h2>Chemistry - Organic Reactions</h2>
+        <div class="result-subtitle" style="color: var(--text-secondary);">Completed on March 15, 2026 - Duration: 38 min / 45 min</div>
+      </div>
+
+      <!-- Result Stats -->
+      <div class="result-stats">
+        <div class="result-stat-card">
+          <div class="stat-icon" style="color: var(--success);">&#10003;</div>
+          <div class="stat-value" style="color: var(--success);">20</div>
+          <div class="stat-label">Correct Answers</div>
+        </div>
+        <div class="result-stat-card">
+          <div class="stat-icon" style="color: var(--danger);">&#10007;</div>
+          <div class="stat-value" style="color: var(--danger);">4</div>
+          <div class="stat-label">Incorrect Answers</div>
+        </div>
+        <div class="result-stat-card">
+          <div class="stat-icon" style="color: var(--text-muted);">&#8212;</div>
+          <div class="stat-value">1</div>
+          <div class="stat-label">Skipped</div>
+        </div>
+        <div class="result-stat-card">
+          <div class="stat-icon" style="color: var(--primary-light);">&#127919;</div>
+          <div class="stat-value" style="color: var(--primary-light);">80%</div>
+          <div class="stat-label">Accuracy</div>
+        </div>
+      </div>
+
+      <!-- Performance by Subject -->
+      <div class="chart-container" style="margin: 32px 0;">
+        <div class="chart-header">
+          <h3>Topic-wise Performance</h3>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 16px; padding: 8px 0;">
+          <div>
+            <div style="display: flex; justify-content: space-between; font-size: 0.9rem; margin-bottom: 6px;">
+              <span>Alkanes & Alkenes</span>
+              <span style="color: var(--success); font-weight: 600;">90%</span>
+            </div>
+            <div class="progress-bar" style="height: 10px;">
+              <div class="progress-fill" style="width: 90%; background: var(--success);"></div>
+            </div>
+          </div>
+          <div>
+            <div style="display: flex; justify-content: space-between; font-size: 0.9rem; margin-bottom: 6px;">
+              <span>Aromatic Compounds</span>
+              <span style="color: var(--primary-light); font-weight: 600;">75%</span>
+            </div>
+            <div class="progress-bar" style="height: 10px;">
+              <div class="progress-fill" style="width: 75%;"></div>
+            </div>
+          </div>
+          <div>
+            <div style="display: flex; justify-content: space-between; font-size: 0.9rem; margin-bottom: 6px;">
+              <span>Reaction Mechanisms</span>
+              <span style="color: var(--accent); font-weight: 600;">65%</span>
+            </div>
+            <div class="progress-bar" style="height: 10px;">
+              <div class="progress-fill" style="width: 65%; background: var(--accent);"></div>
+            </div>
+          </div>
+          <div>
+            <div style="display: flex; justify-content: space-between; font-size: 0.9rem; margin-bottom: 6px;">
+              <span>Functional Groups</span>
+              <span style="color: var(--success); font-weight: 600;">85%</span>
+            </div>
+            <div class="progress-bar" style="height: 10px;">
+              <div class="progress-fill" style="width: 85%; background: var(--success);"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Question Review -->
+      <div class="admin-content-header">
+        <h2>Question Review</h2>
+        <div style="display: flex; gap: 8px;">
+          <button class="btn btn-sm btn-secondary">All</button>
+          <button class="btn btn-sm btn-secondary" style="color: var(--success);">Correct</button>
+          <button class="btn btn-sm btn-secondary" style="color: var(--danger);">Incorrect</button>
+          <button class="btn btn-sm btn-secondary" style="color: var(--text-muted);">Skipped</button>
+        </div>
+      </div>
+
+      <!-- Review Question 1 - Correct -->
+      <div class="review-question">
+        <div class="review-header">
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <div class="q-num" style="background: var(--success); width: 28px; height: 28px; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.8rem; color: white;">1</div>
+            <span class="badge badge-primary">MCQ</span>
+            <span style="font-size: 0.8rem; color: var(--text-muted);">+4 marks</span>
+          </div>
+          <div class="review-status correct">&#10003; Correct</div>
+        </div>
+        <div class="review-text">Which of the following is an example of an aromatic hydrocarbon?</div>
+        <div class="review-options">
+          <div class="review-option">
+            <span style="font-weight: 600; width: 24px;">A</span>
+            <span>Methane</span>
+          </div>
+          <div class="review-option correct-answer">
+            <span style="font-weight: 600; width: 24px;">B</span>
+            <span>Benzene &#10003;</span>
+          </div>
+          <div class="review-option">
+            <span style="font-weight: 600; width: 24px;">C</span>
+            <span>Ethane</span>
+          </div>
+          <div class="review-option">
+            <span style="font-weight: 600; width: 24px;">D</span>
+            <span>Propane</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review Question 2 - Incorrect -->
+      <div class="review-question">
+        <div class="review-header">
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <div class="q-num" style="background: var(--danger); width: 28px; height: 28px; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.8rem; color: white;">2</div>
+            <span class="badge badge-primary">MCQ</span>
+            <span style="font-size: 0.8rem; color: var(--text-muted);">-1 marks</span>
+          </div>
+          <div class="review-status incorrect">&#10007; Incorrect</div>
+        </div>
+        <div class="review-text">What is the IUPAC name of CH3-CH=CH-CH3?</div>
+        <div class="review-options">
+          <div class="review-option wrong-answer">
+            <span style="font-weight: 600; width: 24px;">A</span>
+            <span>1-Butene &#10007; (Your answer)</span>
+          </div>
+          <div class="review-option correct-answer">
+            <span style="font-weight: 600; width: 24px;">B</span>
+            <span>2-Butene &#10003; (Correct answer)</span>
+          </div>
+          <div class="review-option">
+            <span style="font-weight: 600; width: 24px;">C</span>
+            <span>2-Butyne</span>
+          </div>
+          <div class="review-option">
+            <span style="font-weight: 600; width: 24px;">D</span>
+            <span>1-Butyne</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Review Question 3 - Correct Subjective -->
+      <div class="review-question">
+        <div class="review-header">
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <div class="q-num" style="background: var(--success); width: 28px; height: 28px; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.8rem; color: white;">3</div>
+            <span class="badge badge-warning">Subjective</span>
+            <span style="font-size: 0.8rem; color: var(--text-muted);">8/10 marks</span>
+          </div>
+          <div class="review-status correct">&#10003; Evaluated</div>
+        </div>
+        <div class="review-text">Explain the mechanism of electrophilic aromatic substitution with benzene as an example.</div>
+        <div style="background: var(--bg-dark); border-radius: var(--radius-sm); padding: 16px; margin-top: 12px;">
+          <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 8px; font-weight: 600;">Your Answer:</div>
+          <div style="font-size: 0.9rem; line-height: 1.7; color: var(--text-secondary);">
+            Electrophilic aromatic substitution (EAS) is a reaction where an electrophile replaces a hydrogen atom on the benzene ring. The mechanism involves: 1) Generation of the electrophile, 2) Formation of the sigma complex (arenium ion) through electrophilic attack, 3) Deprotonation to restore aromaticity...
+          </div>
+        </div>
+      </div>
+
+      <!-- Actions -->
+      <div style="display: flex; gap: 12px; justify-content: center; margin: 40px 0;">
+        <a href="dashboard.html" class="btn btn-secondary">Back to Dashboard</a>
+        <a href="test-engine.html" class="btn btn-primary">Retake Test</a>
+      </div>
+    </main>
+  </div>
+
+</body>
+</html>
